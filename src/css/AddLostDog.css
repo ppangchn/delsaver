@@ -17,7 +17,41 @@
     text-decoration: none;
 }
 
-.no-txt-dec:hover {
-    color: white;
-    text-decoration: none;
+
+.img-full-div {
+    width: 28.55vw;
+}
+
+.sq-box {
+    width: 1vw;
+    height: 1vw;
+}
+
+.c1 {
+    background-color: #000000;
+    border: 0.5px solid #000000;
+}
+.c2 {
+    background-color: #793B27;
+    border: 0.5px solid #000000;
+}
+.c3 {
+    background-color:  #97460B;
+    border: 0.5px solid #000000;
+}
+.c4 {
+    background-color: #712D1E;
+    border: 0.5px solid #000000;
+}
+.c5 {
+    background-color:#D17C20;
+    border: 0.5px solid #000000;
+}
+.c6 {
+    background-color: #CFCFCF;
+    border: 0.5px solid #000000;
+}
+.c7 {
+    background-color: #FFFFFF;
+    border: 0.5px solid #000000;
 }

@@ -9,6 +9,7 @@ import AddLostDog from "../components/ViewLostDog/AddLostDog/FirstStep";
 import FirstStep from "../components/ViewLostDog/AddLostDog/FirstStep";
 import SecondStep from "../components/ViewLostDog/AddLostDog/SecondStep";
 import ThirdStep from "../components/ViewLostDog/AddLostDog/ThirdStep";
+import AddFoundDog from '../components/ViewFoundDog/AddFoundDog'
 
 class MainRoute extends Component {
   render() {
@@ -23,6 +24,7 @@ class MainRoute extends Component {
         <Route exact path="/addlostdog" component={FirstStep} />
         <Route path="/addlostdog/2" component={SecondStep} />
         <Route path="/addlostdog/3" component={ThirdStep} />
+        <Route path="/addfounddog" component={AddFoundDog} />
       </Switch>
     );
   }
