@@ -1,0 +1,54 @@
+.about-top {
+    width: 100vw;
+    height: 646px;
+    text-align: center;
+    padding: 15vh 0;
+    margin: 0 0 -165px 0;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://s3-alpha-sig.figma.com/img/f1a1/1c44/1fc84ddb89dda03c2acf0535b608e068?Expires=1546819200&Signature=HmEkDafvb4le-wn8lGbEcqgqQOWbV80oagPzUwLeB5dEDC0nM1OoQ4QwavRyVb--E1qXz6p9vAlUsM~FjnViVQlLGtC-6LL3qwU33Md315YaYEC3Mcd839NNEXaEJK0J8jyyr0m-XwsCDrr0TjLq77FxifBreGem9wNeS-oJdbdDlvsgk-DXuCn9xWShc9QsCu0LWnVo~UaOL2h5a~ypmr4U0EF4tpAkiDQlSMJOjPixndJlNEz7PJ~VjhpffPkUnx~HkkULAi0L~IxYt3iikw5N8ipYqHDFi2GxewlTC0frfG3YQNAAAEePxCqgT2sEmAKHNIycPXXO2d2Ao-NVEg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
+}
+
+.about-top h1 {
+    color: white;
+}
+
+p {
+    font-family: 'Sarabun', sans-serif;
+    font-weight: 300;
+}
+
+.about-font-title {
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Athiti', sans-serif;
+    margin-bottom: 30px;
+}
+
+ylw {
+    color: #FEAE02;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container {
+    max-width: 657px;
+}
+
+.about-content {
+    position: relative;
+    background-color: white;
+    z-index: 999999;
+    margin-top: -200px;
+    width: 875px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+}

@@ -1,0 +1,30 @@
+.top {
+    width: 100%;
+    text-align: center;
+    padding: 15vh 0;
+    margin-bottom: 3vw;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://i.imgur.com/KYZ1Ylh.jpg");
+}
+
+.top h1 {
+    color: white;
+}
+
+ylw {
+    color: #FEAE02;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container {
+    max-width: 657px;
+}
