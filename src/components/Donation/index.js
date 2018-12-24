@@ -52,7 +52,7 @@ class Donation extends Component {
                 <Button className="other">1,000 บาท</Button>
               </ButtonGroup>
               <Input placeholder="กำหนดเอง" />
-              <Button>ต่อไป</Button>
+              <Button className="next">ต่อไป</Button>
             </Col>
           </Row>
         </div>

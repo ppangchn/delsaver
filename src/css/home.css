@@ -1,6 +1,5 @@
 #header {
   height: 50vh;
-  width: 100vw;
   background-image: url("https://s3-alpha-sig.figma.com/img/a377/010d/8b9768dec960ce9fe537b10f960f4abb?Expires=1546819200&Signature=HwRgDVPUrTY36~JsyqCrdSCTBqAyocuQmq38U3nWdOrLH7K7MaLvTxPPhfKpF7hqiu~g4uv~RJKMJUKIZldTSePLbK6W6XYVMtxoS6cGAvJ7w~Ig00Rik9tpidgTdar8Kwk0w6IoS~61wLSn3NaPg9ty2LL6wP4BLlrRSCL-Q8hEMYAWY0ncX3CJ-8gLcU40xjupR6TTZmuxvGI39GCP6NpLzG5junvEeQKko46SqFB3EC6llShUrzHVvklp88KNu78DpjoaT~fjRpDBalgATvn4JMLYJA-JtzXQsXIq9MLFLS7~AcTdSfnW5-kGjZXho4BwdfW4gVmw00y6zjAVTw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
   background-size: cover;
   background-position: center;
@@ -16,54 +15,67 @@
 }
 
 .lost-text {
-  padding: 16PX;
+  padding: 16px;
   text-align: right;
   align-self: center;
   display: inline-block;
 }
 
 .found-text {
-  padding: 16PX;
+  padding: 16px;
   text-align: left;
   align-self: center;
   display: inline-block;
 }
 
 .lost-icon {
-  padding: 16PX;
+  padding: 16px;
   align-self: center;
   display: inline-block;
+
+  background: #ffffff;
+  border: 3px solid #000000;
+  border-radius: 50%;
+  box-sizing: border-box;
 }
 
 .found-icon {
-  padding: 16PX;
+  padding: 16px;
   align-self: center;
   display: inline-block;
+
+  background: #ffffff;
+  border: 3px solid #000000;
+  border-radius: 50%;
+  box-sizing: border-box;
 }
 
 .right {
-    text-align: right;
+  text-align: right;
 }
 
 #caseSuccess {
-    padding: 1.5vw 25vw;
-    background-color: #f1e2a0;
+  padding: 1.5vw 25vw;
+  background-color: #f1e2a0;
 }
 #caseSuccess h1 {
-    font-size: 4vw;
+  font-size: 4vw;
 }
-
 
 #donation {
   margin: 0;
-  height: 10vw;
   text-align: center;
   background-color: #f1e2a0;
+  background-image: url("https://s3-alpha-sig.figma.com/img/bf88/6ce5/964686a54432735ba4a75313b8b54225?Expires=1546819200&Signature=JWjK04ImPCsso~0XPVspn1epLtipT9K2XwVfj0aFUxg5UZAfTkRGsD3BVk351ZmGu~1HkDz5-1AS~Ivvj0p8FMy35aMtQlIc4bNb1JnMHiWV7kcNkTdr~CJENtztF4j6koczzXS96tHtAx8~f5QLBtwT6rSqw-ZSEjyRvWIEwGqfmlPTmrBKzgS4gg8e2bRrN6LIkYLlpd-kKqj7g~GciukJDAokOrWN9XItgz-Yj0ICNjC1skWIbVimVVFJN5MLdFQ6UNGueCKuSu~7y7avYUwyni9hCkah4K7bsZ3F-ADp6MTfOK1eaeNhbnP5cFOwJAviPA1k54GJOvH6bXQxIQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
+}
+
+#donation h1 {
+  color: white;
+  align-content: center !important;
 }
 
 #footer {
   margin: 0;
-  height: 10vw;
   text-align: center;
   color: #fff;
   background-color: #200c25;
