@@ -52,10 +52,6 @@ ylw {
     text-align: center;
 }
 
-.container {
-    max-width: 657px;
-}
-
 .blog-content {
     position: relative;
     background-color: white;
