@@ -12,6 +12,7 @@
 
 .feature {
   cursor: pointer;
+  
 }
 
 .lost-text {
@@ -73,6 +74,7 @@
 }
 
 #caseSuccess {
+  margin-top: 2rem;
   padding: 1.5vw 25vw;
   background-color: #f1e2a0;
 }
