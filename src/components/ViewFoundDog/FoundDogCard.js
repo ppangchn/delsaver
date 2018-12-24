@@ -34,7 +34,7 @@ class FoundDogCard extends Component {
             this.toggleModal();
           }}
         />
-        <CardBody className="font-detail">{data.date}</CardBody>
+        <CardBody className="font-detail">วันที่พบเจอ : {data.date}</CardBody>
         <Modal
           centered
           bolded
