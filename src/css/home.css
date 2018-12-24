@@ -43,3 +43,24 @@
 #caseSuccess h1 {
     font-size: 4vw;
 }
+
+
+#donation {
+  margin: 0;
+  height: 10vw;
+  text-align: center;
+  background-color: #f1e2a0;
+}
+
+#footer {
+  margin: 0;
+  height: 10vw;
+  text-align: center;
+  color: #fff;
+  background-color: #200c25;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}

@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import { Container, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
 import "../../css/home.css";
-import Review from "./review"
+import Review from "./review";
+import Blog from "./bolgList";
 
 class Home extends React.Component {
   constructor() {
@@ -16,6 +17,9 @@ class Home extends React.Component {
   render() {
     return (
       <div>
+        <section className="header">
+        </section>
+
         <section id="feature">
           <Container>
             <Row>
@@ -27,7 +31,10 @@ class Home extends React.Component {
                     <p className="font-detail">คำอธิบาย</p>
                   </div>
                   <div className="lost-icon">
-                    <img src="https://via.placeholder.com/100" alt="รูปแจ้งสุนัขหาย" />
+                    <img
+                      src="https://via.placeholder.com/100"
+                      alt="รูปแจ้งสุนัขหาย"
+                    />
                   </div>
                 </Link>
               </Col>
@@ -36,7 +43,10 @@ class Home extends React.Component {
               <Col xs="6" className="center">
                 <Link to="\" className="link">
                   <div className="found-icon">
-                    <img src="https://via.placeholder.com/100" alt="รูปแจ้งสุนัขหาย" />
+                    <img
+                      src="https://via.placeholder.com/100"
+                      alt="รูปแจ้งสุนัขหาย"
+                    />
                   </div>
                   <div className="found-text">
                     <h2 className="font-title">สุนัขที่พบเจอ</h2>
@@ -59,11 +69,29 @@ class Home extends React.Component {
 
         <section id="review">
           <Review />
-        </section><hr/>
+        </section>
+        <hr />
+
+        <section id="blog">
+          <Container>
+            <Blog />
+          </Container>
+        </section>
+
+        <section id="donation">
+          <Container>
+            <h1 className="font-title">DONATION</h1>
+          </Container>
+        </section>
+
+        <section id="footer">
+          <Container>
+            <h1 className="font-title">FOOTER</h1>
+          </Container>
+        </section>
       </div>
     );
   }
 }
 
 export default Home;
-

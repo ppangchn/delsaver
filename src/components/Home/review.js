@@ -3,16 +3,16 @@ import React, { Component } from "react";
 class Review extends React.Component {
   constructor() {
     super();
-    this.state = {};
+    this.state = {
+    };
   }
 
   render() {
     return (
-      <div>
-        
-      </div>
+      <div></div>
     );
   }
 }
 
 export default Review;
+
