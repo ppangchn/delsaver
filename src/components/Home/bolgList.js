@@ -6,13 +6,13 @@ class BlogList extends Component {
   constructor() {
     super();
     this.state = {
-      listOfLostDog: [1, 2, 3, 4, 5]
+      listOfLostDog: [1, 2, 3]
     };
   }
   render() {
     const { listOfLostDog } = this.state;
     return (
-      <div className="grid mt2">
+      <div className="grid">
             {listOfLostDog.map(dog => {
               return <Blog data={dog} />;
             })}
