@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Container, Row, Col ,Input} from "reactstrap";
+import { Container, Row, Col ,Input,Button} from "reactstrap";
+import {Link} from 'react-router-dom'
 import Select from 'react-select'
 import LostDogList from './LostDogList'
 import "../../css/font.css";
@@ -17,6 +18,9 @@ class ViewLostDog extends Component {
     handleAddress(e) {
         this.setState({address : e.target.value})
     } 
+    goPathAddLostDog() {
+        this.props.history.push('/addlostdog')
+    }
   render() {
       const {listOfKind} = this.state;
     return (
@@ -24,22 +28,25 @@ class ViewLostDog extends Component {
         <Row className="center">
           <Col className="font-title title bold">รวมสุนัขที่ถูกแจ้งหาย</Col>
         </Row>
-        <Row className="center">
-          <Col className="font-title bold">ระบุข้อมูลเพิ่มเติม</Col>
-          {/* <Col md="0" className="font-title">เรียงตาม</Col> */}
+        <Row className="mt1 center">
+          <Col className="font-detail bold">ระบุข้อมูลเพิ่มเติม</Col>
+          {/* <div className="font-detail">เรียงตามสถานที่และเวลาล่าสุด</div> */}
         </Row>
-        <Row className="center">
-          <Col md="2" className="font-title bold">สีของสุนัข</Col>
+        <Row className="mt1 center">
+          <Col md="2" className="font-detail bold">สีของสุนัข</Col>
         </Row>
-        <Row className="center">
-          <Col md="2" className="font-title bold">พันธุ์ของสุนัข</Col>
+        <Row className="mt1 center">
+          <Col md="2" className="font-detail bold">พันธุ์ของสุนัข</Col>
           <Col sm="2" md="3"><Select options={listOfKind}/></Col>
         </Row>
-        <Row className="center">
-          <Col md="2" className="font-title bold">สถานที่ที่พบสุนัขล่าสุด</Col>
+        <Row className="mt1 center">
+          <Col md="2" className="font-detail bold">สถานที่ที่พบสุนัขล่าสุด</Col>
           <Col sm="2" md="3"><Input onChange={(e) => this.handleAddress(e)}/></Col>
         </Row>
         <LostDogList />
+        <Button color="danger" >
+          <Link to="/addlostdog" className="no-txt-dec">แจ้งสัตว์เลี้ยงหายที่นี่</Link>
+        </Button>
       </Container>
     );
   }

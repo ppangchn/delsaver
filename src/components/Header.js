@@ -99,7 +99,6 @@ class Header extends Component {
           >
             เกี่ยวกับเรา
           </NavLink>
-          <NavLink className={`pointer hover-nl`}>a</NavLink>
         </Nav>
         </Collapse>
       </Navbar>
