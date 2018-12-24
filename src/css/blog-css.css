@@ -8,6 +8,16 @@
     background-position: center;
     background-image: url("https://i.imgur.com/DPALClE.jpg");
 }
+.blog-top-2 {
+    width: 100vw;
+    height: 646px;
+    text-align: center;
+    padding: 15vh 0;
+    margin: 0 0 -165px 0;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://i.imgur.com/S3GGfwN.png");
+}
 
 .blog-top h1 {
     color: white;
