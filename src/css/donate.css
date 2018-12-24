@@ -49,10 +49,15 @@
   font-weight: 600 !important;
 }
 
+.btn-group-vertical {
+    width: 100% !important;
+}
+
 .selected {
     margin: 5px 0;
     background: #feae02 !important;
     border: none !important;
+    
 }
 
 .other {
@@ -60,4 +65,10 @@
     margin: 5px 0;
     background-color: white !important;
     border: solid 3px #feae02 !important;
+}
+
+.next{
+    margin: 5px 0;
+    background-color: #333333 !important;
+    width: 100%;
 }
