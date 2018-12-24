@@ -1,0 +1,45 @@
+.center {
+  text-align: center;
+}
+
+.link {
+  color: #200c25;
+}
+.link:hover {
+  color: #200c25;
+  text-decoration: none;
+}
+
+.lost-text {
+  padding: 16PX;
+  text-align: right;
+  display: inline-block;
+}
+
+.found-text {
+  padding: 16PX;
+  text-align: left;
+  display: inline-block;
+}
+
+.lost-icon {
+  padding: 16PX;
+  display: inline-block;
+}
+
+.found-icon {
+  padding: 16PX;
+  display: inline-block;
+}
+
+.right {
+    text-align: right;
+}
+
+#caseSuccess {
+    padding: 1.5vw 25vw;
+    background-color: #f1e2a0;
+}
+#caseSuccess h1 {
+    font-size: 4vw;
+}
