@@ -9,7 +9,7 @@ class Home extends React.Component {
     super(props);
     this.state = {
       month: "3",
-      foundCount: "0000000010"
+      foundCount: "00010"
     };
   }
 

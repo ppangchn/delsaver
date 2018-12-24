@@ -12,7 +12,7 @@ class BlogList extends Component {
   render() {
     const { listOfLostDog } = this.state;
     return (
-      <div className="grid mt2">
+      <div className="grid">
             {listOfLostDog.map(dog => {
               return <Blog data={dog} />;
             })}
