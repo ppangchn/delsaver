@@ -11,12 +11,8 @@
   text-align: center;
 }
 
-.link {
-  color: #200c25;
-}
-.link:hover {
-  color: #200c25;
-  text-decoration: none;
+.feature {
+  cursor: pointer;
 }
 
 .lost-text {

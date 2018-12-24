@@ -1,13 +1,12 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "reactstrap";
-import { Link } from "react-router-dom";
 import "../../css/home.css";
 import Review from "./review";
 import Blog from "./bolgList";
 
 class Home extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       month: 0,
       foundCount: 0
@@ -17,42 +16,37 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        <section id="header">
-        </section>
+        <section id="header" />
 
         <section id="feature">
           <Container>
             <Row>
               {/* lost */}
-              <Col xs="6" className="center">
-                <Link to="\" className="link">
-                  <div className="lost-text">
-                    <h2 className="font-title">แจ้งสุนัขหาย</h2>
-                    <p className="font-detail">คำอธิบาย</p>
-                  </div>
-                  <div className="lost-icon">
-                    <img
-                      src="https://via.placeholder.com/100"
-                      alt="รูปแจ้งสุนัขหาย"
-                    />
-                  </div>
-                </Link>
+              <Col className="feature" xs="6" onClick={() => this.props.history.push('/addlostdog')}>
+                <div className="lost-text">
+                  <h2 className="font-title">แจ้งสุนัขหาย</h2>
+                  <p className="font-detail">คำอธิบาย</p>
+                </div>
+                <div className="lost-icon">
+                  <img
+                    src="https://via.placeholder.com/100"
+                    alt="รูปแจ้งสุนัขหาย"
+                  />
+                </div>
               </Col>
 
               {/* found */}
-              <Col xs="6" className="center">
-                <Link to="\" className="link">
-                  <div className="found-icon">
-                    <img
-                      src="https://via.placeholder.com/100"
-                      alt="รูปแจ้งสุนัขหาย"
-                    />
-                  </div>
-                  <div className="found-text">
-                    <h2 className="font-title">สุนัขที่พบเจอ</h2>
-                    <p className="font-detail">คำอธิบาย</p>
-                  </div>
-                </Link>
+              <Col className="feature" xs="6" className="center">
+                <div className="found-icon">
+                  <img
+                    src="https://via.placeholder.com/100"
+                    alt="รูปแจ้งสุนัขหาย"
+                  />
+                </div>
+                <div className="found-text">
+                  <h2 className="font-title">สุนัขที่พบเจอ</h2>
+                  <p className="font-detail">คำอธิบาย</p>
+                </div>
               </Col>
             </Row>
           </Container>
