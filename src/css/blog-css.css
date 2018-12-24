@@ -8,6 +8,20 @@
     background-position: center;
     background-image: url("https://i.imgur.com/DPALClE.jpg");
 }
+
+.b-top {
+    width: 100vw;
+    height: 300px;
+    text-align: center;
+    color: #fff;
+    padding: 15vh 0;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://images.pexels.com/photos/886465/pexels-photo-886465.jpeg");
+}
+.font-h1 {
+    font-family: 'Athiti', sans-serif;
+}
 .blog-top-2 {
     width: 100vw;
     height: 646px;
@@ -35,12 +49,25 @@ p {
     margin-bottom: 30px;
 }
 
+.b-font-title {
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Athiti', sans-serif;
+    margin-bottom: 30px;
+    padding: 10px;
+    background: #000;
+}
+
 .blog-h2 {
     font-family: 'Athiti', sans-serif;
     font-weight: 700;
 }
 ylw {
     color: #FEAE02;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .grid {

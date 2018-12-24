@@ -3,6 +3,7 @@ import { Container, Row, Col, Button } from "reactstrap";
 import "../../css/home.css";
 import Review from "./review";
 import Blog from "./bolgList";
+import Footer from "../Footer";
 
 class Home extends React.Component {
   constructor(props) {
@@ -86,9 +87,7 @@ class Home extends React.Component {
         </section>
 
         <section id="footer">
-          <Container>
-            <h1 className="font-title">FOOTER</h1>
-          </Container>
+        <Footer />
         </section>
       </div>
     );

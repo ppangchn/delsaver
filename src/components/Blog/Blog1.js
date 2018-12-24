@@ -2,7 +2,7 @@ import React,{Component} from 'react'
 import { Container, Row, Col } from "reactstrap";
 import "../../css/blog-css.css";
 
-class About extends Component {
+class Blog1 extends Component {
     render() {
         return(
             <div>
@@ -80,4 +80,4 @@ class About extends Component {
     }
 }
 
-export default About
+export default Blog1
