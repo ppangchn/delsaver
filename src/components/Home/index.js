@@ -7,10 +7,7 @@ import Blog from "./bolgList";
 class Home extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      month: "3",
-      foundCount: "10"
-    };
+    this.state = {};
   }
 
   render() {
@@ -23,7 +20,7 @@ class Home extends React.Component {
             <Row>
               {/* lost */}
               <Col
-                className="feature"
+                className="feature d-flex align-items-center"
                 xs="6"
                 onClick={() => this.props.history.push("/addlostdog")}
               >
@@ -41,9 +38,8 @@ class Home extends React.Component {
 
               {/* found */}
               <Col
-                className="feature"
+                className="feature d-flex align-items-center"
                 xs="6"
-                className="center"
                 onClick={() => this.props.history.push("/addfounddog")}
               >
                 <div className="found-icon">
@@ -52,6 +48,7 @@ class Home extends React.Component {
                     alt="รูปแจ้งสุนัขหาย"
                   />
                 </div>
+
                 <div className="found-text">
                   <h2 className="font-title">สุนัขที่พบเจอ</h2>
                   <p className="font-detail">พบสุนัขต้องสงสัยแจ้งได้ที่นี่</p>
@@ -63,9 +60,13 @@ class Home extends React.Component {
 
         <section id="caseSuccess">
           <Container>
-            <h1 className="font-title">"กว่า {this.state.month} เดือน</h1>
+            <h1 className="font-title">
+              "กว่า <span className="number">0</span>
+              <span className="number">3</span> เดือน
+            </h1>
             <h1 className="font-title right">
-              เราพบสุนัขแล้ว {this.state.foundCount} ตัว"
+              เราพบสุนัขแล้ว <span className="number">3</span>
+              <span className="number">2</span> ตัว"
             </h1>
           </Container>
         </section>
@@ -86,7 +87,13 @@ class Home extends React.Component {
             <h1 className="font-title">
               ร่วมเป็นส่วนหนึ่งในการส่งน้องหมากลับบ้าน
             </h1>
-            <Button outline color="warning" onClick={() => this.props.history.push("/donation")}>บริจาค \></Button>
+            <Button
+              outline
+              color="warning"
+              onClick={() => this.props.history.push("/donation")}
+            >
+              บริจาค >
+            </Button>
           </Container>
         </section>
       </div>
