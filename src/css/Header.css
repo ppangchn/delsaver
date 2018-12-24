@@ -3,5 +3,10 @@
 }
 
 .hover-nl:hover {
-    color: red;
+    transition: 0.2s;
+    color: red !important;
+}
+
+.bold {
+    font-weight: bold;
 }
