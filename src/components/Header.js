@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Navbar, Nav, NavLink, NavbarBrand } from "reactstrap";
+import { Navbar, Nav, NavLink, NavbarBrand ,Collapse} from "reactstrap";
 import { withRouter } from "react-router-dom";
 import "../css/font.css";
 import "../css/Header.css";
@@ -10,8 +10,12 @@ class Header extends Component {
       viewLostDogBold: "",
       viewFoundDogBold: "",
       donationBold: "",
-      aboutBold: ""
+      aboutBold: "",
+      collapsed:false
     };
+  }
+  handleCollapse() {
+      this.setState({collapsed : !this.state.collapsed})
   }
   goPathHome() {
     this.clear();
@@ -48,7 +52,6 @@ class Header extends Component {
   }
   clear() {
     this.setState({
-      homeBold: "",
       viewLostDogBold: "",
       viewFoundDogBold: "",
       donationBold: "",
@@ -60,18 +63,18 @@ class Header extends Component {
   }
   render() {
     const {
-      homeBold,
       viewLostDogBold,
       viewFoundDogBold,
       donationBold,
       aboutBold
     } = this.state;
     return (
-      <Navbar className="font-detail">
+      <Navbar className="font-detail"  expand="md">
         <NavbarBrand className="pointer" onClick={() => this.goPathHome()}>
           delsaver
         </NavbarBrand>
-        <Nav className="ml-auto">
+        <Collapse isOpen={!this.state.collapsed} navbar>
+        <Nav className="ml-auto" navbar>
           <NavLink
             className={`pointer hover-nl ${viewLostDogBold}`}
             onClick={() => this.goPathViewLostDog()}
@@ -98,6 +101,7 @@ class Header extends Component {
           </NavLink>
           <NavLink className={`pointer hover-nl`}>a</NavLink>
         </Nav>
+        </Collapse>
       </Navbar>
     );
   }

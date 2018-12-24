@@ -1,0 +1,22 @@
+.title {
+    font-size: 3vw;
+}
+
+.mt2 {
+    margin-top: 3vw;
+}
+.mr2 {
+    margin-right: 2vw;
+}
+.mb2 {
+    margin-bottom: 2vw;
+}
+.center {
+    text-align: center;
+    justify-content: center;
+}
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
