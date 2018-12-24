@@ -12,6 +12,7 @@
 
 .feature {
   cursor: pointer;
+  
 }
 
 .lost-text {
@@ -21,9 +22,18 @@
   display: inline-block;
 }
 
+.lost-text p, .found-text p {
+  font-size: 1.5vw;
+}
+
+
+.lost-text h2, .found-text h2 {
+  font-size: 3vw;
+}
+
 .found-text {
   padding: 16px;
-  text-align: left;
+  text-align: right;
   align-self: center;
   display: inline-block;
 }
@@ -37,6 +47,15 @@
   border: 3px solid #000000;
   border-radius: 50%;
   box-sizing: border-box;
+}
+
+.number {
+  background-image: url("https://s3-alpha-sig.figma.com/img/f6bc/cc65/d7876b80fd88a2229eca0d06eee6c352?Expires=1546819200&Signature=E~n5STbewr0yZv5-eBwbPcxJ3ZCk7CwAjm3DdWPeGkQSfIitkc-4nmLqxVGuAHpEoSGSqZfqZJd7lhq5925~ujD6M2XYu~c-6j0LNwapfoP8j2IyHobjxwTEekxeHmcIrzlmN1~SBU1IjzUbgxx~rqEblN50hKPaw1oobgFQ4R6gjL2YQ8X9hRR~4grwepR09AHd03dyki-7Dqj8EKV~g8xg3hmAugoDsxmQkOk-Zy4gYUinevwEcAiSVaZ-24mJZby7Zsq3OWw6C79ZGmFVEg-9d64Xp~vWmAOdP-jC-zcCvE5xmexyAWq1hUnQ5kcQ-HHXGJX0UVkWrrC8F14ZiQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
+  background-position: center;
+  background-size: cover;
+  margin: 2px;
+  padding: 0 5px;
+  
 }
 
 .found-icon {
@@ -55,6 +74,7 @@
 }
 
 #caseSuccess {
+  margin-top: 2rem;
   padding: 1.5vw 25vw;
   background-color: #f1e2a0;
 }
@@ -86,4 +106,8 @@
 .grid {
   display: grid;
   grid-template-columns: auto auto auto !important;
+}
+
+.lost-text h2, .found-text h2 {
+  font-weight: 600;
 }

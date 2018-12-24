@@ -8,10 +8,7 @@ import Footer from "../Footer";
 class Home extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      month: "3",
-      foundCount: "00010"
-    };
+    this.state = {};
   }
 
   render() {
@@ -19,12 +16,12 @@ class Home extends React.Component {
       <div>
         <section id="header" />
 
-        <section id="feature">
+        <section id="features">
           <Container>
             <Row>
               {/* lost */}
               <Col
-                className="feature"
+                className="feature d-flex align-items-center"
                 xs="6"
                 onClick={() => this.props.history.push("/addlostdog")}
               >
@@ -41,13 +38,18 @@ class Home extends React.Component {
               </Col>
 
               {/* found */}
-              <Col className="feature" xs="6" className="center">
+              <Col
+                className="feature d-flex align-items-center"
+                xs="6"
+                onClick={() => this.props.history.push("/addfounddog")}
+              >
                 <div className="found-icon">
                   <img
                     src="https://s3-alpha-sig.figma.com/img/f1f9/d89d/aa9aaec5b6c1a17822d9299158f0f1fc?Expires=1546819200&Signature=PFoU04kkb3zOUwsASI9Lli3XjJyi0JnWRhJgpAqKcOkEgcMB04oQK5IZJ5BmKZcc9ANPpR~GmTw4kmN0zZdSZGRK8dl-ibCTqJWqFAtR5-8Hz4hWdAWcOXD5kAvKB63TUJXRQmW1g0OZBve839bCXMV5if9~6kncNeTszCcHC-EXQfBjkd00DTJTGYckWAnge45Ld6GTvH2VdW1QKyoJyNTFH0QLAPUF-bvYjackbARqdflZQmAg8IK3BqWHd3cPZKDUQEP7DLjIl3eOx~IKA5rQp-CNzzm7IszB4oICJQgnypwo5pyGUzTI8Njsh6fMgVGagOxLX4YEYEe00NtAQA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
                     alt="รูปแจ้งสุนัขหาย"
                   />
                 </div>
+
                 <div className="found-text">
                   <h2 className="font-title">สุนัขที่พบเจอ</h2>
                   <p className="font-detail">พบสุนัขต้องสงสัยแจ้งได้ที่นี่</p>
@@ -59,9 +61,13 @@ class Home extends React.Component {
 
         <section id="caseSuccess">
           <Container>
-            <h1 className="font-title">"กว่า {this.state.month} เดือน</h1>
+            <h1 className="font-title">
+              "กว่า <span className="number">0</span>
+              <span className="number">3</span> เดือน
+            </h1>
             <h1 className="font-title right">
-              เราพบสุนัขแล้ว {this.state.foundCount} ตัว"
+              เราพบสุนัขแล้ว <span className="number">3</span>
+              <span className="number">2</span> ตัว"
             </h1>
           </Container>
         </section>
@@ -82,12 +88,23 @@ class Home extends React.Component {
             <h1 className="font-title">
               ร่วมเป็นส่วนหนึ่งในการส่งน้องหมากลับบ้าน
             </h1>
+<<<<<<< HEAD
             <Button outline color="warning">บริจาค ></Button>
           </Container>
         </section>
 
         <section id="footer">
         <Footer />
+=======
+            <Button
+              outline
+              color="warning"
+              onClick={() => this.props.history.push("/donation")}
+            >
+              บริจาค >
+            </Button>
+          </Container>
+>>>>>>> 5a5bd4611dd7ed6620563837d6a6099c6a190559
         </section>
       </div>
     );

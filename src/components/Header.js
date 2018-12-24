@@ -69,7 +69,7 @@ class Header extends Component {
       aboutBold
     } = this.state;
     return (
-      <Navbar fixed className="font-detail"  expand="md">
+      <Navbar className="font-title fixed"  expand="md">
         <NavbarBrand className="pointer" onClick={() => this.goPathHome()}>
           <img src="https://s3-alpha-sig.figma.com/img/ab0c/6381/ccfa28677c41b4f449f0cb4ccfe4e8e9?Expires=1546819200&Signature=cA7VpeyIunj5HIremM5TK31Zw52Fz1h6ZROPZvJFFBXhIRKzY3ZWhF0mYQUmB5BHIMW5swjFY4xE2lQsrULYn7BjSE7OHrZf1W3DbjoacsZlqF~zRgOSWRpx7yt6G02HfBF0ugTxH5~e6sAic~UCCQf49hQlRBmt-Oq0j4iIp-S3sImSzrYJcp03tMGEmwuxz~UQkouIJeeTTZPElkqS1NjDZbNjt5UWNI-uI1~oHmmgzt8mY228x0G8visCwB~rcujM76YQzKH4GN2TXsnCb~XMathdNYPWOAee1W~f6mhlPgu9bxo9Mi5YmSyUl1EG52pJUBpna55T0EmEeR-8Ww__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"/>
         </NavbarBrand>
