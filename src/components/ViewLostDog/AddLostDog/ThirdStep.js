@@ -33,7 +33,7 @@ class SecondStep extends Component {
         <Row className="mb1 center">
             <Col><img src="http://share.olanlab.com/userfiles/olan/images/google/google_maps/googlemap_marker02.jpg"/></Col>
         </Row>
-        <Row className="center mt2"><Col><Button onClick={() => this.returnToLostDogPage()}>ตกลง</Button></Col></Row>
+        <Row className="center mt2"><Col><Button color="brown" onClick={() => this.returnToLostDogPage()}>ตกลง</Button></Col></Row>
       </Container>
     );
   }

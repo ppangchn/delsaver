@@ -6,11 +6,12 @@ import {
   ModalBody,
   ModalHeader,
   Container,
+  CardBody,
   Row,
   Col
 } from "reactstrap";
-import "../../css/Layout.css";
-import '../../css/font.css'
+import "../../css/Layout.css";  
+import "../../css/font.css";
 class LostDogCard extends Component {
   constructor() {
     super();
@@ -21,7 +22,7 @@ class LostDogCard extends Component {
   }
   render() {
     const { toggle } = this.state;
-    const {data} = this.props;
+    const { data } = this.props;
     return (
       <Card className="mr2 mb2">
         {" "}
@@ -33,14 +34,27 @@ class LostDogCard extends Component {
             this.toggleModal();
           }}
         />
-        <Modal centered bolded isOpen={toggle} toggle={() => this.toggleModal()}>
-          <ModalHeader toggle={() => this.toggleModal()} className="pd0"><div className="center"><img className="img-full-div" src="https://s3-alpha-sig.figma.com/img/785b/62df/87314e006df254c64cebd4ad331d6cf9?Expires=1546819200&Signature=WCKaPTiah-VJhd~Yy0RTd0Jd9W~2bcS5kl2y7pOTLg3X0rdJse-vhOy3rBUnemixHg1LaH7VDDBpkaJL4Ikhr82dc5vclw4cDZg3ZkHQDvTlauiNIPk~wFY-2rqwep6TAo8LR4YVAmpZVd5RGxbQGOW3BoscVC8285TwnqVlnZYUQiWbarh8FoYCqRu-EFML6DytesUkjbdN2xozJ0ni4F183aMUasHCX~JI22R7LpnB6RgIEwvgleDq8UnNm7M7VPzzlxybFBMXo9xzPEEEH6SzoGDwSceRDgi6Fb3dJJkEWMnq4ryD3EeJ4O6S8uZk7YtN0~ESYgvIp-JWEWgoCA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"/></div> </ModalHeader>
+        <CardBody className="font-detail"><div style={{fontWeight:'800'}}>รางวัล : {data.reward}</div><div>วันที่พบ : {data.date}</div></CardBody>
+        <Modal
+          centered
+          bolded
+          isOpen={toggle}
+          toggle={() => this.toggleModal()}
+        >
+          <ModalHeader toggle={() => this.toggleModal()} className="pd0">
+            <div className="center">
+              <img
+                className="img-full-div"
+                src={data.pic}
+              />
+            </div>{" "}
+          </ModalHeader>
           <ModalBody>
-         
             <Container className="font-detail">
-                
               <Row className="center">
-                <Col md="2" className="pd0">สุนัขพันธุ์:</Col>
+                <Col md="2" className="pd0">
+                  สุนัขพันธุ์:
+                </Col>
                 <div className="bold">บูลด็อก</div>
               </Row>
               <Row>

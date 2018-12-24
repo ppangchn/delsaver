@@ -118,27 +118,27 @@ handleUnique(e) {
         <Row className="center mt1">
           <Col md="2">ลักษณะหู</Col>
           <Col md="2">
-            <Select options={listOfEar} value={ear} onChange={(e) => this.handleEar(e)}/>
+            <Select options={listOfEar} value={ear} onChange={(e) => this.handleEar(e)} className="font-detail"/>
           </Col>
           <Col md="2">ปัญหาสุขภาพ</Col>
           <Col md="2">
-            <Select options={listOfHealthProblem} value={healthProblem} onChange={(e) => this.handleHealthProblem(e)}/>
+            <Select options={listOfHealthProblem} value={healthProblem} onChange={(e) => this.handleHealthProblem(e)} className="font-detail"/>
           </Col>
         </Row>
         <Row className="center mt1">
           <Col md="2">ลักษณะลิ้น</Col>
           <Col md="2">
-            <Select options={listOfTongue} value={tongue} onChange={(e) => this.handleTongue(e)}/>
+            <Select options={listOfTongue} value={tongue} onChange={(e) => this.handleTongue(e)} className="font-detail"/>
           </Col>
           <Col md="2">อุปกรณ์เสริม</Col>
           <Col md="2">
-            <Select options={listOfOptional} value={optional} onChange={(e) => this.handleOptional(e)}/>
+            <Select options={listOfOptional} value={optional} onChange={(e) => this.handleOptional(e)} className="font-detail"/>
           </Col>
         </Row>
         <Row className="center mt1">
           <Col md="2">ลักษณะหาง</Col>
           <Col md="2">
-            <Select options={listOfTail} value={tail} onChange={(e) => this.handleTail(e)}/>
+            <Select options={listOfTail} value={tail} onChange={(e) => this.handleTail(e)} className="font-detail"/>
           </Col>
           <Col md="4">ลักษณะเด่นเพิ่มเติมของสุนัข(ถ้ามี)</Col>
         </Row>
@@ -148,19 +148,19 @@ handleUnique(e) {
             <Select options={listOfHair} value={hair} onChange={(e) => this.handleHair(e)}/>
           </Col>
           <Col md="4">
-            <Input onChange={(e) => this.handleUnique(e)} value={unique}/>
+            <Input onChange={(e) => this.handleUnique(e)} value={unique} className="font-detail"/>
           </Col>
         </Row>
         <Row className="center mt1  ">
           <Col md="2">ลักษณะใบหน้า</Col>
           <Col md="2">
-            <Select options={listOfFace} value={face} onChange={(e) => this.handleFace(e)}/>
+            <Select options={listOfFace} value={face} onChange={(e) => this.handleFace(e)} className="font-detail"/>
           </Col>
           <Col md="4" />
         </Row>
         <Row className="center mt2">
           <Col>
-            <Button onClick={() => this.nextPage()}>ถัดไป</Button>
+            <Button color="brown" onClick={() => this.nextPage()}>ถัดไป</Button>
           </Col>
         </Row>
       </Container>

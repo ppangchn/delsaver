@@ -36,3 +36,12 @@
     padding-bottom: 0 !important;
 }
 
+.line {
+    position: absolute;
+    width: 256px;
+    height: 0px;
+    left: 543px;
+    top: 381px;
+    
+    border: 1px solid #000000
+}

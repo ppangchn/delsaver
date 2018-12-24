@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Athiti|Sarabun');
 
 .font-detail {
-    font-family: 'Sarabun', 'sans-serif'
+    font-family: 'Sarabun', 'sans-serif';
+    font-size: 0.8vw;
 }
 
 .font-title {
-    font-family:'Athiti', sans-serif
+    font-family:'Athiti', sans-serif 
 }

@@ -37,9 +37,9 @@ class AddFoundDog extends Component {
             <Col md="0" className="bar  ml-2 mr-2"></Col>
             <Col md="0" className="bar  ml-2 mr-2"></Col>
         </Row>
-        <Row>
-          <Col md="4"><img style={{width:'15vw',height:'15vw'}}src="https://imgur.com/CqsiQQc.jpg"/></Col>
-          <Col>
+        <Row className="center">
+          <Col md="4" className="center"><img style={{width:'20rem',height:'20rem'}}src="https://imgur.com/CqsiQQc.jpg"/></Col>
+          <Col md="6">
             <Row className="mt1 center">
               <Col className="font-detail bold">ข้อมูลทั่วไปของสุนัข</Col>
             </Row>
@@ -47,7 +47,13 @@ class AddFoundDog extends Component {
               <Col md="2" className="font-detail bold">
                 สีของสุนัข
               </Col>
-              
+              <div className="sq-box mr-sq-box c1" />
+       <div className="sq-box mr-sq-box c2" />
+       <div className="sq-box mr-sq-box c3" />
+       <div className="sq-box mr-sq-box c4" />
+       <div className="sq-box mr-sq-box c5" />
+       <div className="sq-box mr-sq-box c6" />
+       <div className="sq-box mr-sq-box c7" />
             </Row>
             <Row className="mt1 center">
               <Col md="2" className="font-detail bold">
@@ -65,7 +71,7 @@ class AddFoundDog extends Component {
         </Row>
         
         <Row className="center mt2">
-            <Col><Button onClick={() => this.returnToFoundDogPage()}>ถัดไป</Button></Col>
+            <Col><Button onClick={() => this.returnToFoundDogPage()} color="yellow">ตกลง</Button></Col>
         </Row>
         
       </Container>

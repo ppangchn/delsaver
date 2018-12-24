@@ -5,6 +5,7 @@ import Select from "react-select";
 import FoundDogList from "./FoundDogList";
 import "../../css/font.css";
 import "../../css/Layout.css";
+import '../../css/AddLostDog.css'
 class ViewFoundDog extends Component {
   constructor() {
     super();
@@ -38,12 +39,12 @@ class ViewFoundDog extends Component {
   render() {
     const { listOfKind,toggle ,address} = this.state;
     return (
-      <Container className="mt2">
+      <Container className="mt2 preload">
         <Row className="center">
-          <Col className="font-title title bold">รวมสุนัขที่ถูกพบเจอ</Col>
+          <Col className="font-title title bold" style={{backgroundColor:"#D99502",color:'white'}}>รวมสุนัขที่ถูกพบเจอ</Col>
         </Row>
         <Row className="mt2 center">
-          <Col md="2" className="font-detail bold">
+          <Col md="1" className="font-detail bold">
             สีของสุนัข
           </Col>
           <div className="sq-box mr-sq-box c1" />
@@ -67,15 +68,12 @@ class ViewFoundDog extends Component {
           </Col>
           {/* <div className="font-detail">เรียงตามสถานที่และเวลาล่าสุด</div> */}
         </Row>
-        <Row>
-            <Col className="mt1 font-detail" style={{color:'#DB1717'}}>แจ้งให้ทราบ : ทางทีมงานได้ขอข้อมูลที่อยู่ปัจจุบันของท่านเพื่อจะได้หาน้องหมาที่หายไปในบริเวณที่ใกล้เคียงท่านที่สุด</Col>
-        </Row>
         <FoundDogList />
-        <Row className="mt1 center">
+        <Row className="mt1 center mb2">
           <Button
             size="lg"
             block
-            color="danger mb2"
+            color="yellow"
             onClick={() => this.goPathAddFoundDog()}
           >
             แจ้งพบเจอสัตว์ที่นี่

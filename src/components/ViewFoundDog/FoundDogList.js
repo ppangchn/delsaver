@@ -7,22 +7,22 @@ class FoundDogList extends Component {
     this.state = {
       listOfLostDog: [
         {
-            pic: "https://imgur.com/CqsiQQc.jpg"
+            pic: "https://imgur.com/CqsiQQc.jpg",date:'28 DEC 2018'
         },
         {
-            pic: "https://imgur.com/fgPxl0q.jpg"
+            pic: "https://imgur.com/fgPxl0q.jpg",date:'25 NOV 2018'
         },
         {
-            pic: "https://imgur.com/x3M1SSR.jpg"
+            pic: "https://imgur.com/x3M1SSR.jpg",date:'16 MAY 2018'
         },
         {
-            pic: "https://imgur.com/XDT090y.jpg"
+            pic: "https://imgur.com/XDT090y.jpg",date:'14 MAR 2018'
         },
         {
-            pic: "https://imgur.com/q9ErJqs.jpg"
+            pic: "https://imgur.com/q9ErJqs.jpg",date:'10 JAN 2018'
         },
         {
-            pic: "https://imgur.com/USpAJT8.jpg"
+            pic: "https://imgur.com/USpAJT8.jpg",date:'4 JAN 2018'
         }
 
       ]
