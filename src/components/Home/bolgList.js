@@ -6,7 +6,7 @@ class BlogList extends Component {
   constructor() {
     super();
     this.state = {
-      listOfLostDog: [1, 2, 3, 4, 5]
+      listOfLostDog: [1, 2, 3]
     };
   }
   render() {
