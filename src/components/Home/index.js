@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Col } from "reactstrap";
+import { Container, Row, Col, Button } from "reactstrap";
 import "../../css/home.css";
 import Review from "./review";
 import Blog from "./bolgList";
@@ -9,7 +9,7 @@ class Home extends React.Component {
     super(props);
     this.state = {
       month: "3",
-      foundCount: "00010"
+      foundCount: "10"
     };
   }
 
@@ -18,7 +18,7 @@ class Home extends React.Component {
       <div>
         <section id="header" />
 
-        <section id="feature">
+        <section id="features">
           <Container>
             <Row>
               {/* lost */}
@@ -40,7 +40,12 @@ class Home extends React.Component {
               </Col>
 
               {/* found */}
-              <Col className="feature" xs="6" className="center">
+              <Col
+                className="feature"
+                xs="6"
+                className="center"
+                onClick={() => this.props.history.push("/addfounddog")}
+              >
                 <div className="found-icon">
                   <img
                     src="https://s3-alpha-sig.figma.com/img/f1f9/d89d/aa9aaec5b6c1a17822d9299158f0f1fc?Expires=1546819200&Signature=PFoU04kkb3zOUwsASI9Lli3XjJyi0JnWRhJgpAqKcOkEgcMB04oQK5IZJ5BmKZcc9ANPpR~GmTw4kmN0zZdSZGRK8dl-ibCTqJWqFAtR5-8Hz4hWdAWcOXD5kAvKB63TUJXRQmW1g0OZBve839bCXMV5if9~6kncNeTszCcHC-EXQfBjkd00DTJTGYckWAnge45Ld6GTvH2VdW1QKyoJyNTFH0QLAPUF-bvYjackbARqdflZQmAg8IK3BqWHd3cPZKDUQEP7DLjIl3eOx~IKA5rQp-CNzzm7IszB4oICJQgnypwo5pyGUzTI8Njsh6fMgVGagOxLX4YEYEe00NtAQA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
@@ -81,12 +86,7 @@ class Home extends React.Component {
             <h1 className="font-title">
               ร่วมเป็นส่วนหนึ่งในการส่งน้องหมากลับบ้าน
             </h1>
-          </Container>
-        </section>
-
-        <section id="footer">
-          <Container>
-            <h1 className="font-title">FOOTER</h1>
+            <Button outline color="warning" onClick={() => this.props.history.push("/donation")}>บริจาค \></Button>
           </Container>
         </section>
       </div>
