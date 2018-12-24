@@ -16,7 +16,7 @@ import Blog2 from "../components/Blog/Blog2";
 class MainRoute extends Component {
   render() {
     return (
-      <Switch>
+<Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/viewlostdog" component={withRouter(ViewLostDog)} />
         <Route exact path="/addlostdog" component={withRouter(AddLostDog)} />
@@ -30,6 +30,7 @@ class MainRoute extends Component {
         <Route exact path="/blog1" component={Blog1} />
         <Route exact path="/blog2" component={Blog2} />
       </Switch>
+      
     );
   }
 }

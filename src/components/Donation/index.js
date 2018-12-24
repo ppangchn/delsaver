@@ -5,7 +5,7 @@ import "../../css/donate.css";
 class Donation extends Component {
   render() {
     return (
-      <div>
+      <div style={{top:'90px'}}>
         <div className="top">
           <h1 className="font-title">
             ร่วมเป็นส่วนหนึ่งในการส่งน้องหมากลับบ้าน
