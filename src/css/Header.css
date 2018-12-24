@@ -10,3 +10,12 @@
 .bold {
     font-weight: bold;
 }
+
+.fixed {
+    position: fixed !important;
+    background-color: white;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    box-shadow: 0 8px 6px -6px rgba(156, 98, 98, 0.562);
+}
