@@ -1,0 +1,23 @@
+.baractive {
+    width: 2vw;
+    height: 0.4vw;
+    border: none;
+    box-sizing: border-box;
+    background-color:  #DB1717;
+}
+.bar {
+    width: 2vw;
+    height: 0.4vw;
+    border: none;
+    box-sizing: border-box;
+    background-color: black;
+}
+.no-txt-dec {
+    color: white;
+    text-decoration: none;
+}
+
+.no-txt-dec:hover {
+    color: white;
+    text-decoration: none;
+}

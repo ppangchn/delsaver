@@ -1,7 +1,9 @@
 .title {
     font-size: 3vw;
 }
-
+.mt1 {
+    margin-top: 1vw;
+}
 .mt2 {
     margin-top: 3vw;
 }
@@ -18,5 +20,10 @@
 .grid {
     display: grid;
     grid-template-columns: auto auto auto;
+}
+
+.pd0 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
