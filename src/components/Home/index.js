@@ -86,7 +86,7 @@ class Home extends React.Component {
             <h1 className="font-title">
               ร่วมเป็นส่วนหนึ่งในการส่งน้องหมากลับบ้าน
             </h1>
-            <Button outline color="warning">บริจาค ></Button>
+            <Button outline color="warning" onClick={() => this.props.history.push("/donation")}>บริจาค \></Button>
           </Container>
         </section>
       </div>
