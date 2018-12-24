@@ -1,10 +1,12 @@
 import React,{Component} from 'react'
-
+import {Switch,Route} from 'react-router-dom'
+import Home from '../components/Home'
 class MainRoute extends Component {
     render() {
-        return(<div>
-
-        </div>);
+        return(<Switch>
+            <Route exact path="/" component={Home}/>
+            
+        </Switch>);
     }
 }
 
