@@ -7,15 +7,22 @@
 .mt2 {
     margin-top: 3vw;
 }
+.mr-sq-box {
+    margin-right: 0.5vw;
+}
 .mr2 {
     margin-right: 2vw;
 }
 .mb2 {
     margin-bottom: 2vw;
 }
+.mb1 {
+    margin-bottom: 1vw;
+}
 .center {
     text-align: center;
     justify-content: center;
+    align-items: center;
 }
 .grid {
     display: grid;
@@ -25,5 +32,7 @@
 .pd0 {
     padding-left: 0 !important;
     padding-right: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
 }
 
