@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Col } from "reactstrap";
+import { Container, Row, Col, Button } from "reactstrap";
 import "../../css/home.css";
 import Review from "./review";
 import Blog from "./bolgList";
@@ -86,6 +86,7 @@ class Home extends React.Component {
             <h1 className="font-title">
               ร่วมเป็นส่วนหนึ่งในการส่งน้องหมากลับบ้าน
             </h1>
+            <Button outline color="warning">บริจาค ></Button>
           </Container>
         </section>
       </div>
