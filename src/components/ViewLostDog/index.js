@@ -1,52 +1,109 @@
 import React, { Component } from "react";
-import { Container, Row, Col ,Input,Button} from "reactstrap";
-import {Link} from 'react-router-dom'
-import Select from 'react-select'
-import LostDogList from './LostDogList'
+import { Container, Row, Col, Input, Button , Modal, ModalBody, ModalHeader } from "reactstrap";
+import { Link } from "react-router-dom";
+import Select from "react-select";
+import LostDogList from "./LostDogList";
 import "../../css/font.css";
 import "../../css/Layout.css";
 class ViewLostDog extends Component {
-    constructor() {
-        super();
-        this.state = {
-            listOfColor:[],
-            listOfSelectedColor:[],
-            listOfKind: [],
-            address:''
-        }
+  constructor() {
+    super();
+    this.state = {
+      listOfColor: [],
+      listOfSelectedColor: [],
+      listOfKind: [],
+      address: "คณะเทคโนโลยีสารสนเทศ เขตลาดกระบัง จังหวัดกรุงเทพ",
+      listOfKind: [
+        { value: "ชิวาวา", label: "ชิวาวา" },
+        { value: "พุดเดิ้ล", label: "พุดเดิ้ล" },
+        { value: "พุดเดิ้ล", label: "พุดเดิ้ล" },
+        { value: "โกลเด้นรีทรีฟเวอร์", label: "โกลเด้นรีทรีฟเวอร์" },
+        { value: "ปอมเมอเรเนี่ยน", label: "ปอมเมอเรเนี่ยน" },
+        { value: "ไซบีเรียน ฮัสกี้", label: "ไซบีเรียน ฮัสกี้" },
+        { value: "ปั๊ก", label: "ปั๊ก" },
+        { value: "ชิสุ", label: "ชิสุ" }
+      ],
+      kind: "",
+      toggle:true
+    };
+  }
+  handleAddress(e) {
+    this.setState({ address: e.target.value });
+  }
+  goPathAddLostDog() {
+    this.props.history.push("/addlostdog");
+  }
+  random() {
+      console.log('random')
+    let array = this.shuffle(this.state.listOfKind)
+    this.setState({listOfKind:array})
+  }
+  toggleModal() {
+    this.setState({ toggle: !this.state.toggle });
+  }
+    shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+  
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+  
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+  
+      // And swap it with the current element.
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
     }
-    handleAddress(e) {
-        this.setState({address : e.target.value})
-    } 
-    goPathAddLostDog() {
-        this.props.history.push('/addlostdog')
-    }
+  
+    return array;
+  }
   render() {
-      const {listOfKind} = this.state;
+    const { listOfKind,toggle ,address} = this.state;
     return (
       <Container className="mt2">
         <Row className="center">
           <Col className="font-title title bold">รวมสุนัขที่ถูกแจ้งหาย</Col>
         </Row>
-        <Row className="mt1 center">
-          <Col className="font-detail bold">ระบุข้อมูลเพิ่มเติม</Col>
-          {/* <div className="font-detail">เรียงตามสถานที่และเวลาล่าสุด</div> */}
+        <Row className="mt2 center">
+          <Col md="2" className="font-detail bold">
+            สีของสุนัข
+          </Col>
+          <div className="sq-box mr-sq-box c1" />
+          <div className="sq-box mr-sq-box c2" />
+          <div className="sq-box mr-sq-box c3" />
+          <div className="sq-box mr-sq-box c4" />
+          <div className="sq-box mr-sq-box c5" />
+          <div className="sq-box mr-sq-box c6" />
+          <div className="sq-box mr-sq-box c7" />
+          <Col md="2" className="font-detail bold">
+            พันธุ์ของสุนัข
+          </Col>
+          <Col sm="2" md="2">
+            <Select options={listOfKind} />
+          </Col>
+          <Col md="2" className="font-detail bold">
+            สถานที่ที่พบสุนัขล่าสุด
+          </Col>
+          <Col sm="2" md="2">
+            <Input onChange={e => this.handleAddress(e)} value={address}/>
+          </Col>
         </Row>
-        <Row className="mt1 center">
-          <Col md="2" className="font-detail bold">สีของสุนัข</Col>
-        </Row>
-        <Row className="mt1 center">
-          <Col md="2" className="font-detail bold">พันธุ์ของสุนัข</Col>
-          <Col sm="2" md="3"><Select options={listOfKind}/></Col>
-        </Row>
-        <Row className="mt1 center">
-          <Col md="2" className="font-detail bold">สถานที่ที่พบสุนัขล่าสุด</Col>
-          <Col sm="2" md="3"><Input onChange={(e) => this.handleAddress(e)}/></Col>
+        <Row>
+            <Col className="mt1 font-detail" style={{color:'#DB1717'}}>แจ้งให้ทราบ : ทางทีมงานได้ขอข้อมูลที่อยู่ปัจจุบันของท่านเพื่อจะได้หาน้องหมาที่หายไปในบริเวณที่ใกล้เคียงท่านที่สุด</Col>
         </Row>
         <LostDogList />
-        <Button color="danger" >
-          <Link to="/addlostdog" className="no-txt-dec">แจ้งสัตว์เลี้ยงหายที่นี่</Link>
-        </Button>
+        <Row className="mt1 center">
+          <Button
+            size="lg"
+            block
+            color="danger mb2"
+            onClick={() => this.goPathAddLostDog()}
+          >
+            แจ้งสัตว์เลี้ยงหายที่นี่
+          </Button>
+        </Row>
       </Container>
     );
   }

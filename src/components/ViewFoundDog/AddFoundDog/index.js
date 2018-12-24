@@ -3,7 +3,7 @@ import { Container, Row, Col, Button } from "reactstrap";
 import Select from 'react-select'
 import '../../../css/AddLostDog.css'
 import '../../../css/Layout.css'
-class FirstStep extends Component {
+class AddFoundDog extends Component {
     constructor() {
         super()
         this.state = {
@@ -15,26 +15,22 @@ class FirstStep extends Component {
             {value:'ไซบีเรียน ฮัสกี้',label:'ไซบีเรียน ฮัสกี้'},
             {value:'ปั๊ก',label:'ปั๊ก'},
             {value:'ชิสุ',label:'ชิสุ'},
-        ],kind:'',
-        listOfSize:[{value:'เล็ก',label:'เล็ก'},{value:'กลาง',label:'กลาง'},{value:'ใหญ่',label:'ใหญ่'}],
-        size:''
+        ],kind:''
         }
-    }
-    handleSize(e) {
-        this.setState({size:e})
+        
     }
     handleKind(e) {
         this.setState({kind:e})
     }
-    nextPage() {
-        this.props.history.push('/addlostdog/2')
+    returnToFoundDogPage() {
+        this.props.history.push('/viewfounddog')
     }
   render() {
-    const {listOfKind,kind,listOfSize,size} = this.state
+      const {listOfKind,kind} = this.state
     return (
       <Container className="mt2">
         <Row className="center">
-          <Col className="font-title title bold">กรอกข้อมูลสุนัขของคุณ</Col>
+          <Col className="font-title title bold">กรอกข้อมูลสุนัขที่คุณพบเจอ</Col>
         </Row>
         <Row className="center mt1 mb2">
             <Col md="0" className="baractive ml-2 mr-2"></Col>
@@ -42,7 +38,7 @@ class FirstStep extends Component {
             <Col md="0" className="bar  ml-2 mr-2"></Col>
         </Row>
         <Row>
-          <Col md="4"><img style={{width:"20vw",height:"15vw"}}src="https://imgur.com/ALz8HpE.jpg"/></Col>
+          <Col md="4"><img style={{width:'15vw',height:'15vw'}}src="https://imgur.com/CqsiQQc.jpg"/></Col>
           <Col>
             <Row className="mt1 center">
               <Col className="font-detail bold">ข้อมูลทั่วไปของสุนัข</Col>
@@ -63,13 +59,13 @@ class FirstStep extends Component {
               <Col md="2" className="font-detail bold">
                 ขนาด
               </Col>
-              <Col md="3"><Select options={listOfSize} value={size} onChange={(e) => this.handleSize(e)}/></Col>
+              <Col md="3"><Select /></Col>
             </Row>
           </Col>
         </Row>
         
         <Row className="center mt2">
-            <Col><Button onClick={() => this.nextPage()}>ถัดไป</Button></Col>
+            <Col><Button onClick={() => this.returnToFoundDogPage()}>ถัดไป</Button></Col>
         </Row>
         
       </Container>
@@ -77,4 +73,4 @@ class FirstStep extends Component {
   }
 }
 
-export default FirstStep;
+export default AddFoundDog;
