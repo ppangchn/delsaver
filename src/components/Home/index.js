@@ -3,6 +3,7 @@ import { Container, Row, Col, Button } from "reactstrap";
 import "../../css/home.css";
 import Review from "./review";
 import Blog from "./bolgList";
+import Footer from "../Footer";
 
 class Home extends React.Component {
   constructor(props) {
@@ -87,6 +88,14 @@ class Home extends React.Component {
             <h1 className="font-title">
               ร่วมเป็นส่วนหนึ่งในการส่งน้องหมากลับบ้าน
             </h1>
+<<<<<<< HEAD
+            <Button outline color="warning">บริจาค ></Button>
+          </Container>
+        </section>
+
+        <section id="footer">
+        <Footer />
+=======
             <Button
               outline
               color="warning"
@@ -95,6 +104,7 @@ class Home extends React.Component {
               บริจาค >
             </Button>
           </Container>
+>>>>>>> 5a5bd4611dd7ed6620563837d6a6099c6a190559
         </section>
       </div>
     );

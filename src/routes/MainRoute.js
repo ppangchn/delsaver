@@ -12,6 +12,7 @@ import ThirdStep from "../components/ViewLostDog/AddLostDog/ThirdStep";
 import AddFoundDog from '../components/ViewFoundDog/AddFoundDog'
 import Blog1 from "../components/Blog/Blog1";
 import Blog2 from "../components/Blog/Blog2";
+import Business from "../components/Business";
 
 class MainRoute extends Component {
   render() {
@@ -29,6 +30,7 @@ class MainRoute extends Component {
         <Route path="/addfounddog" component={AddFoundDog} />
         <Route exact path="/blog1" component={Blog1} />
         <Route exact path="/blog2" component={Blog2} />
+        <Route exact path="/business" component={Business} />
       </Switch>
       
     );

@@ -42,8 +42,17 @@ ylw {
     position: relative;
     background-color: white;
     z-index: 999999;
-    margin-top: -200px;
     width: 875px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+}
+
+.about-content2 {
+    position: relative;
+    background-color: white;
+    z-index: 999999;
+    width: 1130px;
     margin-left: auto;
     margin-right: auto;
     padding: 50px;
